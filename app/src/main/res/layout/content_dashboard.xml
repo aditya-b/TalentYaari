@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.user.aditya.travelyaari.Dashboard"
+    tools:showIn="@layout/app_bar_dashboard">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/failed"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/noborder"
+                    android:ems="10"
+                    android:hint="Search"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+
+                <ImageButton
+                    android:id="@+id/searchbut"
+                    style="@android:style/Widget.DeviceDefault.ImageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/noborder"
+                    android:padding="10dp"
+                    app:srcCompat="@mipmap/ic_search_black_24dp" />
+            </LinearLayout>
+
+            <GridLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:columnCount="2"
+                android:rowCount="4">
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#FAFAFA"
+                        android:padding="10dp"
+                        app:srcCompat="@mipmap/ic_dir" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Director"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#FAFAFA"
+                        android:padding="10dp"
+                        app:srcCompat="@mipmap/ic_cin" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:text="Cinematographer"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="#FAFAFA"
+                        android:padding="10dp"
+                        app:srcCompat="@mipmap/ic_sin" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Singers"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="20dp"
+                    android:weightSum="1">
+
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="#FAFAFA"
+                        android:padding="10dp"
+                        app:srcCompat="@mipmap/ic_asst_dir" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.11"
+                        android:gravity="center_horizontal"
+                        android:text="Assistant Director"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <ImageButton
+                        android:id="@+id/imageButton6"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="#FAFAFA"
+                        app:srcCompat="@mipmap/ic_editor" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Editor"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="#FAFAFA"
+                        android:padding="10dp"
+                        app:srcCompat="@mipmap/ic_md" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Music Director"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <ImageButton
+                        android:id="@+id/imageButton7"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="#FAFAFA"
+                        android:padding="10dp"
+                        app:srcCompat="@mipmap/ic_cater" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Catering"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <ImageButton
+                        android:id="@+id/imageButton8"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="#FAFAFA"
+                        android:padding="10dp"
+                        app:srcCompat="@mipmap/ic_producer" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Producer"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                </LinearLayout>
+
+            </GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

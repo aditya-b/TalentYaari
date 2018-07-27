@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.user.aditya.travelyaari.FP"
+    tools:showIn="@layout/activity_fp">
+
+    <ScrollView
+        android:id="@+id/scroll_FP"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/fp_bg"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <LinearLayout
+                android:id="@+id/lin1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/roudedtextview"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:translationZ="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.63"
+                        android:padding="10dp"
+                        android:text="Username:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+
+                    <EditText
+                        android:id="@+id/t1"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@drawable/rounded_et"
+                        android:drawableLeft="@mipmap/ic_account_circle_black_24dp"
+                        android:drawablePadding="5dp"
+                        android:ems="10"
+                        android:fontFamily="sans-serif"
+                        android:hint="Username"
+                        android:inputType="textPersonName"
+                        android:padding="10dp"
+                        android:textAppearance="@android:style/TextAppearance.DialogWindowTitle"
+                        android:typeface="sans" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    tools:layout_editor_absoluteX="2dp"
+                    tools:layout_editor_absoluteY="50dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.79"
+                        android:padding="10dp"
+                        android:text="ENTER RESET CODE:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+                    <EditText
+                        android:id="@+id/t2"
+                        style="@style/Widget.AppCompat.AutoCompleteTextView"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@drawable/rounded_et"
+                        android:drawableLeft="@mipmap/ic_lock_open_black_24dp"
+                        android:drawablePadding="5dp"
+                        android:ems="10"
+                        android:fontFamily="sans-serif"
+                        android:hint="******"
+                        android:inputType="numberPassword"
+                        android:maxLength="6"
+                        android:padding="10dp"
+                        android:textAppearance="@android:style/TextAppearance.DialogWindowTitle" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/roudedtextview"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:translationZ="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.11"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    tools:layout_editor_absoluteX="2dp"
+                    tools:layout_editor_absoluteY="50dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.79"
+                        android:padding="10dp"
+                        android:text="NEW PASSWORD:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+                    <EditText
+                        android:id="@+id/t3"
+                        style="@style/Widget.AppCompat.AutoCompleteTextView"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@drawable/rounded_et"
+                        android:drawableLeft="@mipmap/ic_https_black_24dp"
+                        android:drawablePadding="5dp"
+                        android:ems="10"
+                        android:fontFamily="sans-serif"
+                        android:hint="********"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:textAppearance="@android:style/TextAppearance.DialogWindowTitle" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="0.11"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.63"
+                        android:padding="10dp"
+                        android:text="Confirm Password:"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+
+                    <EditText
+                        android:id="@+id/t4"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@drawable/rounded_et"
+                        android:drawableLeft="@mipmap/ic_https_black_24dp"
+                        android:drawablePadding="5dp"
+                        android:ems="10"
+                        android:fontFamily="sans-serif"
+                        android:hint="********"
+                        android:inputType="textPassword"
+                        android:padding="10dp"
+                        android:textAppearance="@android:style/TextAppearance.DialogWindowTitle"
+                        android:typeface="sans" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

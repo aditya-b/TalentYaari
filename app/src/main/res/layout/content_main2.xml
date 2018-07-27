@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:clipToPadding="false"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.user.aditya.travelyaari.Login"
+    tools:showIn="@layout/activity_main2">
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/login_page"
+        android:clipToPadding="false"
+        android:gravity="center_vertical|center"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:id="@+id/child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/roudedtextview"
+            android:elevation="6dp"
+            android:orientation="vertical"
+            android:translationZ="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:clipToPadding="false"
+                android:fadingEdge="horizontal|vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.63"
+                    android:padding="10dp"
+                    android:text="Username:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+
+                <EditText
+                    android:id="@+id/uname"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/rounded_et"
+                    android:drawableLeft="@mipmap/ic_account_circle_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:hint="Username"
+                    android:inputType="textPersonName"
+                    android:nextFocusDown="@+id/pass"
+                    android:padding="10dp"
+                    android:imeOptions="actionNext"
+                    android:textAppearance="@android:style/TextAppearance.DialogWindowTitle"
+                    android:typeface="sans" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="50dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.79"
+                    android:padding="10dp"
+                    android:text="Password:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+                <EditText
+                    android:id="@+id/pass"
+                    style="@style/Widget.AppCompat.AutoCompleteTextView"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/rounded_et"
+                    android:drawableLeft="@mipmap/ic_https_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:hint="********"
+                    android:inputType="textPassword"
+                    android:nextFocusDown="@+id/button3"
+                    android:padding="10dp"
+                    android:imeOptions="actionDone"
+                    android:textAppearance="@android:style/TextAppearance.DialogWindowTitle" />
+
+                <Button
+                    android:id="@+id/button3"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.79"
+                    android:text="Forgot password?"
+                    android:textColor="@android:color/holo_blue_dark" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

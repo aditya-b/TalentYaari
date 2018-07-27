@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <view
+            android:id="@+id/pager"
+            class="android.support.v4.view.ViewPager"
+            id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="5dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                app:tabBackground="@drawable/tabselector"
+                app:tabGravity="center"
+                app:tabIndicatorColor="@android:color/white"
+                app:tabIndicatorHeight="0dp">
+
+            </android.support.design.widget.TabLayout>
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:drawableRight="@mipmap/ic_chevron_right_white_24dp"
+                android:text="SKIP"
+                android:textColor="@android:color/white" />
+        </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

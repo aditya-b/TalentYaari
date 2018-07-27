@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Please state your reason:"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <CheckBox
+            android:id="@+id/c1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Haven't seen the works." />
+
+        <CheckBox
+            android:id="@+id/c2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already rated earlier." />
+
+        <CheckBox
+            android:id="@+id/c3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Not interested." />
+
+        <CheckBox
+            android:id="@+id/c4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Will review later." />
+
+        <CheckBox
+            android:id="@+id/c5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Other" />
+
+
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:enabled="false"
+            android:text="submit"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

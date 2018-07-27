@@ -1,0 +1,27 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context="com.user.aditya.travelyaari.Desc">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/noborder"
+        android:ellipsize="start"
+        android:ems="10"
+        android:enabled="false"
+        android:fontFamily="sans-serif"
+        android:hint="No Description Uploaded Yet"
+        android:inputType="textMultiLine|textPersonName"
+        android:maxLines="10"
+        android:padding="10dp"
+        android:singleLine="false"
+        android:textColor="@drawable/editextcolor"
+        android:textIsSelectable="true" />
+
+</FrameLayout>

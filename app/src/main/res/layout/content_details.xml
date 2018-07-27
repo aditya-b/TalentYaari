@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.user.aditya.travelyaari.Details"
+    tools:showIn="@layout/activity_details">
+
+    <ScrollView
+        android:id="@+id/sv"
+        style="@android:style/Widget.Material.Light.ScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background_details"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/propic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:src="@drawable/sample_profile" />
+
+            <LinearLayout
+                android:id="@+id/lin1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/roudedtextview"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:translationZ="5dp">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Rating"
+                    android:textColor="#00695C"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Administrator:"
+                        android:textColor="@android:color/black" />
+
+                    <RatingBar
+                        android:id="@+id/arating"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:stepSize="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="87dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.34"
+                        android:gravity="center_horizontal"
+                        android:text="Users:"
+                        android:textColor="@android:color/black" />
+
+                    <RatingBar
+                        android:id="@+id/urating"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:clickable="false" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/roudedtextview"
+                android:elevation="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:translationZ="5dp">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Description and Works"
+                    android:textColor="#00695C"
+                    android:textStyle="bold" />
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                </android.support.design.widget.TabLayout>
+
+                <view
+                    android:id="@+id/vp"
+                    class="android.support.v4.view.ViewPager"
+                    id="@+id/view"
+                    layout_width="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

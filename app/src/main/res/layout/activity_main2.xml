@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.user.aditya.travelyaari.Login">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:label="Login"
+        android:textAlignment="center"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/holo_blue_light"
+            android:textAlignment="center"
+            app:title="Login"
+            app:titleTextColor="@android:color/white" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        layout="@layout/content_main2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/submitlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center"
+        android:layout_marginTop="280dp"
+        android:clickable="true"
+        android:translationZ="4dp"
+        app:backgroundTint="@android:color/holo_blue_dark"
+        app:elevation="4dp"
+        app:srcCompat="@mipmap/ic_chevron_right_white_24dp" />
+
+</android.support.design.widget.CoordinatorLayout>
